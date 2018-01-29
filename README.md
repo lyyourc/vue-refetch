@@ -1,6 +1,6 @@
 # vue-refetch
 
-Fetch data for Vue component
+Deal with `pending`, `error`, and `fullfill` local state for vue component when fetch data.
 
 ## Install
 
@@ -13,7 +13,6 @@ npm i -S vue-refetch
 The template,
 
 ```html
-<template>
 <div>
   <vue-refetch :src="{ userFetch }">
     <div slot-scope="{ userFetch }">
@@ -29,13 +28,11 @@ The template,
     </div>
   </vue-refetch>
 </div>
-</template>
 ```
 
 And the scripts,
 
 ```js
-<scripts>
 import vueRefetch from 'vue-refetch'
 
 export default {
@@ -48,5 +45,4 @@ export default {
     }
   }
 }
-</scripts>
 ```
